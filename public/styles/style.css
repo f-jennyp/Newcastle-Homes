@@ -33,6 +33,7 @@ body {
   text-align: center;
   font-family: 'Open San', sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
@@ -111,15 +112,16 @@ h2 {
   font-size: 60px;
   font-weight: 700;
   line-height: 1.2;
-  padding: 20px;
+  padding: 15px 0;
 }
 
 p,
 ul,
-nav ul li a {
+nav ul li a,
+.remarks {
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.8;
   letter-spacing: .5px;
 }
@@ -388,6 +390,8 @@ nav ul li a {
 
 #about .abt-content p {
   margin: 0 60px 60px;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 #about .btn-holder {
@@ -397,6 +401,7 @@ nav ul li a {
 
 #about .img-holder {
   margin-top: -198px;
+  width: 100%;
 }
 
 
@@ -407,12 +412,12 @@ nav ul li a {
   background-size: cover; */
   position: relative;
   color: #fff;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 #services .content {
-  padding: 90px 110px;
+  padding: 90px 180px;
 }
 
 #services .serv-content {
@@ -426,12 +431,25 @@ nav ul li a {
 }
 
 #services .serv-con {
-  padding: 67px;
+  padding: 77px;
 }
 
 #services .img-holder img {
   border-radius: 12px;
+  width: 100%;
+  max-width: 378px;
 }
+
+#services .content p {
+  line-height: 1.7;
+}
+
+/* 
+#services .custom-line {
+  height: 50px;
+  background-color: #FB2E2B;
+  border-radius: 20px;
+} */
 
 #services .serv-content .serv-title {
   font-family: 'Cinzel';
@@ -442,10 +460,99 @@ nav ul li a {
 
 
 /* testimonials */
+
+
 #testimonials .tes-content {
   width: 100%;
-  max-width: 796px;
+  max-width: 746px;
   text-align: start;
+  transform: translate(18%, 25%);
+  margin: 0;
+}
+
+#testimonials h1 {
+  padding-bottom: 10px;
+}
+
+#testimonials .title-page {
+  letter-spacing: 0;
+  text-align: start;
+  margin-bottom: 40px;
+}
+
+#testimonials .star {
+  color: #e5e241;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+
+#testimonials .auth {
+  color: #000;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#testimonials .btn {
+  margin: 50px 0;
+}
+
+#testimonials .img-holder {
+  margin-top: -198px;
+  width: 100%;
+}
+
+
+
+/* vision */
+#vision {
+  background: url('../images/content/vision-bg-img.png')no-repeat right top;
+  /* -webkit-background-size: cover;
+  background-size: cover; */
+  position: relative;
+  color: #fff;
+  max-width: 100%;
+  height: auto;
+}
+
+#vision .content {
+  padding: 90px 180px;
+}
+
+#vision .content p {
+  margin-top: 20px;
+}
+
+#vision .img-holder img {
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+}
+
+#vision .box-holder {
+  width: 227px;
+  height: auto;
+  position: absolute;
+  transform: translate(-37%, -120%);
+}
+
+#vision .box {
+  width: 106px;
+  height: 107px;
+}
+
+#vision .box1 {
+  background: #8D181B;
+}
+
+#vision .box2 {
+  background: #FB2E2B;
+}
+
+#vision .btn-holder {
+  width: 438px;
+  margin: auto;
+  margin-top: -33px;
 }
 
 

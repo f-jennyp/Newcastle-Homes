@@ -76,7 +76,7 @@
 						• Residential</br>
 						• Commercial
 					</p>
-					
+
 				</div>
 			</div>
 		</div>
@@ -88,8 +88,9 @@
 			<div class="title-page">Stunning Short-Term Rental Port Aransas, Texas</div>
 			<div class="box-holder slider">
 				<div class="box">
-					<div class="star">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-					<div class="auth">- Happy Vacationer, 2021</div>
+					<div class="star">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="auth">- Happy Vacationer,
+							2021</span></div>
+
 					<div class="remarks">The beach house was new and nicely decorated. All our family commented on how
 						beautiful the beach house was put together. It seemed to be built exclusively for a beach
 						short-term rental. There was enough parking for five full-size vehicles. We did not have to park
@@ -106,33 +107,45 @@
 			</div>
 		</div>
 
-		<div class="img-holder"><img src="public/images/content" class=""></div>
+		<div class="img-holder"><img src="public/images/content/testimonials-img.png" class=""></div>
 
 	</div>
 
 	<div id="vision">
-		<div class="row flex">
-			<h1>Your Vision, Our Expertise, Your Castle.</h1>
-			<p>Newcastle Homes is the premier custom home builder in Corpus Christi, North Padre Island and Port
-				Aransas. We offer ....</p>
-
-			<div class="img-holder"><img src="public/images/content" class=""></div>
-
-			<div class="btn-holder1">
-				<a href="<?php echo URL ?>more#content">LEARN MORE</a>
+		<div class="row">
+			<div class="content">
+				<h1>Your Vision, Our Expertise, Your Castle.</h1>
+				<p>Newcastle Homes is the premier custom home builder in Corpus Christi, North Padre Island and Port
+					Aransas. We offer a truly custom build with unique designs that bring your vision to life. From real
+					estate services to custom home builds, </br>
+					we can make your home your castle. </p>
 			</div>
-			<div class="btn-holder2">
-				<a href="<?php echo URL ?>contact#content">CONTACT US</a>
+			<div class="img-holder"><img src="public/images/content/vision-img.png" class=""></div>
+			<div class="box-holder flex">
+				<div class="box box1"></div>
+				<div class="box box2"></div>
 			</div>
+			<div class="btn-holder flex">
+				<div class="btn">
+					<a href="<?php echo URL ?>about#content">ABOUT</a>
+				</div>
+				<div class="btn btn2">
+					<a href="<?php echo URL ?>awards#content">AWARDS</a>
+				</div>
+			</div>
+
 		</div>
 	</div>
 
 	<div id="gallery">
-		<div class="row flex">
+		<div class="row">
 			<div class="title-page">GALLERY</div>
 			<h1>Our Gallery</h1>
 
-			<div class="gal content">
+			<div class="gal-content">
+				<div class="thumbnail">
+					
+				</div>
 				<div class="gal-btn"><a href="<?php echo URL ?>gallery#content">VIEW GALLERY</a></div>
 			</div>
 

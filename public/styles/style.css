@@ -92,7 +92,7 @@ nav {
 }
 
 /*call to action*/
-.destroy-on-load,
+
 .cta {
   display: none;
 }
@@ -110,7 +110,7 @@ h1,
 h2 {
   font-family: 'Cinzel';
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2;
   padding: 15px 0;
 }
@@ -133,6 +133,12 @@ nav ul li a,
   letter-spacing: 7px;
 }
 
+img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /*BUTTON*/
 .btn {
   position: relative;
@@ -151,6 +157,7 @@ nav ul li a,
   line-height: 1.2;
   -webkit-appearance: inherit;
   border-radius: 13px;
+  letter-spacing: 1.6px;
 }
 
 .btn2 {
@@ -227,6 +234,18 @@ nav ul li a,
   position: absolute;
   width: 100%;
   margin-top: 20px;
+  align-items: center;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#header .left {
+  gap: 50px;
+}
+
+#header .h-logo img {
+  max-width: 80px;
 }
 
 #header nav a#pull {
@@ -254,7 +273,6 @@ nav ul {
 nav ul li {
   display: inline-block;
   vertical-align: middle;
-  padding: 20px 0 0 0;
 }
 
 nav ul li a {
@@ -327,7 +345,7 @@ nav ul li a {
   position: absolute;
   display: block;
   width: 100%;
-  top: 50%;
+  top: 29%;
   left: 0;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -338,7 +356,7 @@ nav ul li a {
 #banner .row {
   text-align: left;
   color: #fff;
-  font-size: 42px;
+  text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.8);
 }
 
 #banner .foreword {
@@ -349,9 +367,13 @@ nav ul li a {
 #banner .title-like {
   font-family: 'Cinzel';
   font-size: 45px;
-  font-weight: 600;
+  font-weight: 500;
   width: 662px;
   margin-top: 10px;
+}
+
+#banner .title-w {
+  font-weight: 600;
 }
 
 
@@ -433,6 +455,23 @@ nav ul li a {
 #services .serv-con {
   padding: 77px;
 }
+
+#services .box {
+  display: flex;
+}
+
+#services .box:not(:first-child)::before {
+  content: "|";
+  display: inline-block;
+  font-size: 150px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 213px;
+  color: #DDDDDD;
+  font-weight: 100;
+  font-family: serif;
+}
+
 
 #services .img-holder img {
   border-radius: 12px;
@@ -557,15 +596,50 @@ nav ul li a {
 
 
 /*gallery*/
-#gallery img {
-  width: 32%;
-  display: block;
-  margin-bottom: 30px
+
+#gallery {
+  position: relative;
 }
 
-#gallery p {
-  color: #333333;
-  padding: 15px 0 57px
+#gallery .row {
+  padding-top: 101px;
+}
+
+#gallery .gal-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 44px 0;
+}
+
+#gallery .gallery-container {
+  display: flex;
+}
+
+#gallery .gallery-container .right {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  width: 100%;
+  max-width: 745px;
+}
+
+
+#gallery .left img {
+  max-width: 763px;
+}
+
+#gallery .btn-holder {
+  position: absolute;
+}
+
+#gallery .btn-holder .btn2 {
+  padding: 27px 0;
+  width: 168px;
+  letter-spacing: 1.6px;
+  font-weight: 600;
+  background: rgba(255, 0, 0, 0.5);
 }
 
 /*testimonials*/
@@ -683,58 +757,59 @@ form .alert-danger {
 
 /*-----------------------------------------------FOOTER-----------------------------------------------*/
 #footer {
-  background: url('../images/common/footer.jpg')no-repeat top;
+  background: url('../images/content/footer-bg.jpg')no-repeat top;
   -webkit-background-size: cover;
   background-size: cover;
-}
-
-#footer .row {}
-
-#footer h3 {
-  width: 32%;
-}
-
-#footer .email {
-  background: url('../images/common/email.png')no-repeat top center;
-  background-size: 81px 92px
-}
-
-#footer .phone {
-  background: url('../images/common/phone2.png')no-repeat top center;
-  background-size: 81px 92px
-}
-
-#footer .location {
-  background: url('../images/common/location.png')no-repeat top center;
-  background-size: 81px 92px
-}
-
-#footer nav ul li {
-  display: inline-block;
-  vertical-align: middle;
-  width: 20%;
-  text-align: left;
-  padding: 39px 0;
-  min-height: 75px;
-  box-sizing: border-box;
-}
-
-#footer nav ul li a {
-  padding: 39px 0 25px;
-}
-
-#footer .copyrights {
-  background: #3D3330;
-  padding: 20px 0
-}
-
-#footer .copyrights p {
   color: #fff;
+  font-family: 'Poppins';
 }
 
-.techno img {
-  width: 52px;
-  margin: 0 5px -14px;
+#footer .left {
+  text-align: left;
+}
+
+#footer .left .contact-info .flex {
+  justify-content: space-between;
+    gap: 53px;
+}
+
+#footer .left .img-holder img {
+  max-width: 433px;
+}
+
+#footer .left .contact-info .content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 44px;
+}
+
+#footer .left .text-left {
+  margin-left: 20px;
+}
+
+#footer .left .contact-info .phone a {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#footer .left .contact-info img {
+  width: 100%;
+  max-width: 56px;
+}
+
+#footer .contact {
+  width: 100%;
+  max-width: 706px;
+  text-align: left;
+}
+
+#footer h1 {
+  font-weight: 400;
+}
+
+#footer p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
 }
 
 
@@ -866,6 +941,8 @@ form .alert-danger {
   #header .row {
     width: 100%;
     padding: 0;
+    display: block;
+    position: relative;
   }
 
   #header nav {}
@@ -918,21 +995,7 @@ form .alert-danger {
     transform: translateY(-50%);
   }
 
-  .cta {
-    background: #035B96 url("../images/common/phonecall.png") no-repeat center center;
-    border-bottom-left-radius: 40px;
-    border-top: 2px solid #013f9a;
-    border-top-left-radius: 40px;
-    bottom: 10%;
-    display: block;
-    height: 60px;
-    position: fixed;
-    right: 0;
-    text-decoration: none;
-    text-indent: -9999em;
-    width: 60px;
-    z-index: 999;
-  }
+
 
 
 }

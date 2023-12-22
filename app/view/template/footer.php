@@ -2,26 +2,38 @@
 	<div id="footer">
 		<div class="row flex">
 			<div class="left">
-				<div class="img-holder"><img src="public/images/content" class=""></div>
+				<div class="img-holder"><img src="public/images/content/logo.png" class=""></div>
 
 				<div class="contact-info">
-					<div class="phone-holder">
-						<a href="tel:<?php $this->info("phone"); ?>"><img src="public/images/content/phone.png">
-							<span class="label">Phone</span>
-							<?php $this->info("phone"); ?>
-						</a>
+					<div class="flex">
+						<div class="phone content">
+							<img src="public/images/content/ft-phone.png" alt="">
+							<div class="text-left">
+								<div class="label">Phone</div>
+								<a href="tel:<?php $this->info("phone"); ?>">
+									<?php $this->info("phone"); ?>
+								</a>
+							</div>
+						</div>
+
+						<div class="email content">
+							<img src="public/images/content/ft-email.png" alt="">
+							<div class="text-left">
+								<div class="label">Email</div>
+								<a href="mailto:<?php $this->info("email"); ?>">
+									<?php $this->info("email"); ?>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="email-holder">
-						<a href="tel:<?php $this->info("email"); ?>"><img src="public/images/content/email.png">
-							<span class="label">Phone</span>
-							<?php $this->info("email"); ?>
-						</a>
-					</div>
-					<div class="loc-holder">
-						<a href="tel:<?php $this->info("location"); ?>"><img src="public/images/content/location.png">
-							<span class="label">Phone</span>
-							<?php $this->info("location"); ?>
-						</a>
+					<div class="location content">
+						<img src="public/images/content/ft-address.png" alt="">
+						<div class="text-left">
+							<div class="label">Location</div>
+							<a>
+								<?php $this->info("location"); ?>
+							</a>
+						</div>
 					</div>
 
 				</div>
@@ -39,20 +51,19 @@
 
 			<div class="contact">
 				<h1>Connect with us</h1>
-				<span>Don’t be afraid to ask if you are not sure what you would need, we would be happy to help you plan
-					your future projects!</span>
+				<p>Don’t be afraid to ask if you are not sure what you would need, we would be happy to help you plan
+					your future projects!</p>
 				<form action="sendContactForm" method="post" class="sends-email ctc-form">
-					<div class="flex">
-						<label><span class="ctc-hide">Name</span>
-							<input type="text" name="name" placeholder="Name">
-						</label>
-						<label><span class="ctc-hide">Email</span>
-							<input type="text" name="email" placeholder="Email">
-						</label>
-						<label><span class="ctc-hide">Phone</span>
-							<input type="text" name="phone" placeholder="Phone">
-						</label>
-					</div>
+
+					<label><span class="ctc-hide">Name</span>
+						<input type="text" name="name" placeholder="Name">
+					</label>
+					<label><span class="ctc-hide">Email</span>
+						<input type="text" name="email" placeholder="Email">
+					</label>
+					<label><span class="ctc-hide">Phone</span>
+						<input type="text" name="phone" placeholder="Phone">
+					</label>
 					<label><span class="ctc-hide">Message</span>
 						<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
 					</label>

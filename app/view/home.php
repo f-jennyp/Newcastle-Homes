@@ -2,8 +2,8 @@
 
 	<div id="yt-vid">
 		<div class="row flex vid-content">
-			<iframe width="100%" height="738" src="https://www.youtube.com/embed/aCrzs0GjKSM?si=7SyT11BKlMR8zHj3"
-				title="YouTube video player" frameborder="0"
+			<iframe width="100%" height="738" src="https://www.youtube.com/embed/" title="YouTube video player"
+				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen></iframe>
 		</div>
@@ -51,32 +51,37 @@
 			</div>
 
 			<div class="serv-content">
-				<div class="serv-con">
-					<div class="img-holder"><img src="public/images/content/serv-img1.png" class=""></div>
-					<div class="serv-title">Custom Builds</div>
-					<p>At Newcastle Homes we offer a true custom home building experience. No packages or track options
-						here. Our flexibility allows your unique dream home to become a reality.</p>
+				<div class="box">
+					<div class="serv-con">
+						<div class="img-holder"><img src="public/images/content/serv-img1.png" class=""></div>
+						<div class="serv-title">Custom Builds</div>
+						<p>At Newcastle Homes we offer a true custom home building experience. No packages or track
+							options
+							here. Our flexibility allows your unique dream home to become a reality.</p>
+					</div>
 				</div>
-
-				<div class="serv-con">
-					<div class="img-holder"><img src="public/images/content/serv-img2.png" class=""></div>
-					<div class="serv-title">Interior Design</div>
-					<p>
-						• Interior Finish Consultation</br>
-						• Built Ins
-					</p>
+				<div class="box">
+					<div class="serv-con">
+						<div class="img-holder"><img src="public/images/content/serv-img2.png" class=""></div>
+						<div class="serv-title">Interior Design</div>
+						<p>
+							• Interior Finish Consultation</br>
+							• Built Ins
+						</p>
+					</div>
 				</div>
+				<div class="box">
+					<div class="serv-con">
+						<div class="img-holder"><img src="public/images/content/serv-img3.png" class=""></div>
+						<div class="serv-title">Real Estate</div>
+						<p>
+							• Buying Assistance</br>
+							• Selling Assistance</br>
+							• Residential</br>
+							• Commercial
+						</p>
 
-				<div class="serv-con">
-					<div class="img-holder"><img src="public/images/content/serv-img3.png" class=""></div>
-					<div class="serv-title">Real Estate</div>
-					<p>
-						• Buying Assistance</br>
-						• Selling Assistance</br>
-						• Residential</br>
-						• Commercial
-					</p>
-
+					</div>
 				</div>
 			</div>
 		</div>
@@ -143,19 +148,43 @@
 			<h1>Our Gallery</h1>
 
 			<div class="gal-content">
-				<div class="thumbnail">
-					
+				<div class="btn-holder">
+					<div class="btn btn2">
+						<a href="<?php echo URL ?>gellery#content">VIEW GALLERY</a>
+					</div>
 				</div>
-				<div class="gal-btn"><a href="<?php echo URL ?>gallery#content">VIEW GALLERY</a></div>
+				<div class="gallery-container">
+					<div class="left">
+						<div id="img1">
+							<img src="public/images/gallery/1.jpg" alt="image1">
+						</div>
+					</div>
+
+					<div class="right">
+						<div id="img2">
+							<img src="public/images/gallery/2.jpg" alt="image2">
+						</div>
+
+						<div id="img3">
+							<img src="public/images/gallery/3.jpg" alt="image3">
+						</div>
+
+						<div id="img4">
+							<img src="public/images/gallery/4.jpg" alt="image4">
+						</div>
+
+						<div id="img5">
+							<img src="public/images/gallery/5.jpg" alt="image5">
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>
-	</div>
-
-	<div id="contact">
-		<div class="row flex">
-
+		<div class="bg-img">
+			<img src="public/images/content/gallery-bg.png" alt="image5">
 		</div>
 	</div>
+
 
 </div>

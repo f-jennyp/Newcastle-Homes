@@ -27,22 +27,24 @@
 	<header>
 		<div id="header">
 			<div class="row flex content">
-				<a href="home" class="h-logo"><img src="public/images/content/logo.png" alt="Logo"></a>
-				<nav>
-					<a href="#" id="pull"><strong>MENU</strong></a>
-					<ul>
-						<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
-						<li <?php $this->helpers->isActiveMenu("services"); ?>><a
-								href="<?php echo URL ?>services#content">SERVICES</a></li>
-						<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
-								href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
-						<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
-								href="<?php echo URL ?>gallery#content">CUSTOM CASTLE GALLERY</a></li>
-						<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
-								href="<?php echo URL ?>contact#content">CONTACT US</a></li>
-					</ul>
-				</nav>
-				<div class="flex contact-info">
+				<div class="left flex">
+					<a href="home" class="h-logo"><img src="public/images/content/logo.png" alt="Logo"></a>
+					<nav>
+						<a href="#" id="pull"><strong>MENU</strong></a>
+						<ul>
+							<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
+							<li <?php $this->helpers->isActiveMenu("services"); ?>><a
+									href="<?php echo URL ?>services#content">SERVICES</a></li>
+							<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
+									href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
+							<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
+									href="<?php echo URL ?>gallery#content">CUSTOM CASTLE GALLERY</a></li>
+							<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
+									href="<?php echo URL ?>contact#content">CONTACT US</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="right contact-info">
 					<div class="phone-holder">
 						<a href="tel:<?php $this->info("phone"); ?>">
 							<div class="icon">
@@ -84,7 +86,7 @@
 		<div class="content-holder">
 			<div class="row">
 				<div class="foreword">A QUALITY HOME</div>
-				<div class="title-like">UNIQUELY CUSTOMIZED FOR YOU</div>
+				<div class="title-like">UNIQUELY <span class="title-w">CUSTOMIZED</span> FOR YOU</div>
 			</div>
 		</div>
 	</div>

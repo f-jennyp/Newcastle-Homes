@@ -1,11 +1,11 @@
 <?php
-	// error_reporting(E_ALL);
+	error_reporting(0);
 
 	$siteInfo= [
 			//general info
 			"company_name" => "Newcastle Homes", 
 			"phone" =>  "361-834-5354", 		  //either no format or dashed format
-			"email" => "info@mybusiness.com",   //by default is used as recipient email  
+			"email" => "pope232@hotmain.com",   //by default is used as recipient email  
 			"location" => "Padre Island, Mustang Island and Port Aransas", 
 			
 			// email related

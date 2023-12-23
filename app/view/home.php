@@ -2,7 +2,7 @@
 
 	<div id="yt-vid">
 		<div class="row flex vid-content">
-			<iframe width="100%" height="738" src="https://www.youtube.com/embed/" title="YouTube video player"
+			<iframe src="https://www.youtube.com/embed/Hr_AB1t3aHo?si=D4B9ixeVJq7ahGHL" title="YouTube video player"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen></iframe>
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div class="img-holder">
-			<img src="public/images/content/about-img.png" class="image">
+			<!-- <img src="public/images/content/about-img.png" class="image"> -->
 		</div>
 	</div>
 
@@ -112,18 +112,15 @@
 			</div>
 		</div>
 
-		<div class="img-holder"><img src="public/images/content/testimonials-img.png" class=""></div>
+		<div class="img-holder"><img src="public/images/content/testimonials-img.jpg" class=""></div>
 
 	</div>
 
 	<div id="vision">
 		<div class="row">
 			<div class="content">
-				<h1>Your Vision, Our Expertise, Your Castle.</h1>
-				<p>Newcastle Homes is the premier custom home builder in Corpus Christi, North Padre Island and Port
-					Aransas. We offer a truly custom build with unique designs that bring your vision to life. From real
-					estate services to custom home builds, </br>
-					we can make your home your castle. </p>
+				<h1>Your Vision, Our Expertise, <span class="to-db">Your Castle.</span></h1>
+				<p>Newcastle Homes is the premier custom home builder in Corpus Christi, North Padre Island and Port Aransas. We offer a truly custom build with unique <span class="to-db">designs that bring your vision to life. From real estate services to custom home builds, </span><span class="to-db">we can make your home your castle.</span></p>
 			</div>
 			<div class="img-holder"><img src="public/images/content/vision-img.png" class=""></div>
 			<div class="box-holder flex">
@@ -161,19 +158,19 @@
 					</div>
 
 					<div class="right">
-						<div id="img2">
+						<div class="gal-img " id="img2">
 							<img src="public/images/gallery/2.jpg" alt="image2">
 						</div>
 
-						<div id="img3">
+						<div class="gal-img" id="img3">
 							<img src="public/images/gallery/3.jpg" alt="image3">
 						</div>
 
-						<div id="img4">
+						<div class="gal-img" id="img4">
 							<img src="public/images/gallery/4.jpg" alt="image4">
 						</div>
 
-						<div id="img5">
+						<div class="gal-img" id="img5">
 							<img src="public/images/gallery/5.jpg" alt="image5">
 						</div>
 					</div>
@@ -182,7 +179,7 @@
 
 		</div>
 		<div class="bg-img">
-			<img src="public/images/content/gallery-bg.png" alt="image5">
+			<!-- <img src="public/images/content/gallery-bg.png" alt="image5"> -->
 		</div>
 	</div>
 

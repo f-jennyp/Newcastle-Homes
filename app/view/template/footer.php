@@ -2,7 +2,7 @@
 	<div id="footer">
 		<div class="row flex">
 			<div class="left">
-				<div class="img-holder"><img src="public/images/content/logo.png" class=""></div>
+				<div class="img-holder"><img src="public/images/content/ft-logo.png" class=""></div>
 
 				<div class="contact-info">
 					<div class="flex">
@@ -55,19 +55,19 @@
 					your future projects!</p>
 				<form action="sendContactForm" method="post" class="sends-email ctc-form">
 
-					<label><span class="ctc-hide">Name</span>
+					<label><span class="ctc-hide">Name:</span>
 						<input type="text" name="name" placeholder="Name">
 					</label>
-					<label><span class="ctc-hide">Email</span>
+					<label><span class="ctc-hide">Email:</span>
 						<input type="text" name="email" placeholder="Email">
 					</label>
-					<label><span class="ctc-hide">Phone</span>
+					<label><span class="ctc-hide">Phone:</span>
 						<input type="text" name="phone" placeholder="Phone">
 					</label>
-					<label><span class="ctc-hide">Message</span>
+					<label><span class="ctc-hide">Message / Questions:</span>
 						<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
 					</label>
-					<label for="g-recaptcha-response"><span class="ctc-hide">Recaptcha</span></label>
+					<!-- <label for="g-recaptcha-response"><span class="ctc-hide">Recaptcha</span></label>
 					<div class="g-recaptcha"></div>
 					<label>
 						<input type="checkbox" name="consent" class="consentBox">I hereby consent to having this website
@@ -81,8 +81,8 @@
 								target="_blank">Privacy
 								Policy.</a>
 						</label>
-					<?php endif ?>
-					<button type="submit" class="ctcBtn btn" disabled>Submit Form</button>
+					<?php endif ?> -->
+					<button type="submit" class="ctcBtn btn btn2" disabled>Submit Form</button>
 				</form>
 			</div>
 
@@ -101,7 +101,7 @@
 <?php endif ?>
 
 <?php if (in_array($view, ["home", "contact"])): ?>
-	<textarea id="g-recaptcha-response" class="destroy-on-load"></textarea>
+	<!-- <textarea id="g-recaptcha-response" class="destroy-on-load"></textarea> -->
 	<script src='//www.google.com/recaptcha/api.js?onload=captchaCallBack&render=explicit' async defer></script>
 	<script>
 		var captchaCallBack = function () {

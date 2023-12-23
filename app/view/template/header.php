@@ -17,8 +17,12 @@
 	<link rel="stylesheet" href="<?php echo URL; ?>public/fancybox/source/jquery.fancybox.css" media="screen" />
 	<?php $this->helpers->analytics(); ?>
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CMontserrat:400,700,900%7CLato:700"
-		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -27,52 +31,58 @@
 	<header>
 		<div id="header">
 			<div class="row flex content">
-				<div class="left flex">
+				<div class="logo-holder">
 					<a href="home" class="h-logo"><img src="public/images/content/logo.png" alt="Logo"></a>
-					<nav>
-						<a href="#" id="pull"><strong>MENU</strong></a>
-						<ul>
-							<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a></li>
-							<li <?php $this->helpers->isActiveMenu("services"); ?>><a
-									href="<?php echo URL ?>services#content">SERVICES</a></li>
-							<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
-									href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
-							<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
-									href="<?php echo URL ?>gallery#content">CUSTOM CASTLE GALLERY</a></li>
-							<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
-									href="<?php echo URL ?>contact#content">CONTACT US</a></li>
-						</ul>
-					</nav>
 				</div>
-				<div class="right contact-info">
-					<div class="phone-holder">
-						<a href="tel:<?php $this->info("phone"); ?>">
-							<div class="icon">
-								<img src="public/images/content/hd-phone.png" class="icon">
-							</div>
-							<div class="info">
-								<div class="label">Call Us</div>
-								<div class="phone">
-									<?php $this->info("phone"); ?>
-								</div>
-							</div>
-						</a>
+
+				<div class="h-content flex">
+					<div class="left">
+						<nav>
+							<a href="#" id="pull"><strong>MENU</strong></a>
+							<ul>
+								<li <?php $this->helpers->isActiveMenu("home"); ?>><a href="<?php echo URL ?>">HOME</a>
+								</li>
+								<li <?php $this->helpers->isActiveMenu("services"); ?>><a
+										href="<?php echo URL ?>services#content">SERVICES</a></li>
+								<li <?php $this->helpers->isActiveMenu("testimonials"); ?>><a
+										href="<?php echo URL ?>testimonials#content">TESTIMONIALS</a></li>
+								<li <?php $this->helpers->isActiveMenu("gallery"); ?>><a
+										href="<?php echo URL ?>gallery#content">CUSTOM CASTLE GALLERY</a></li>
+								<li <?php $this->helpers->isActiveMenu("contact"); ?>><a
+										href="<?php echo URL ?>contact#content">CONTACT US</a></li>
+							</ul>
+						</nav>
 					</div>
 
-					<div class="email-holder">
-						<a href="tel:<?php $this->info("email"); ?>">
-							<div class="icon">
-								<img src="public/images/content/hd-email.png" class="icon">
-							</div>
-							<div class="info">
-								<div class="label">Email Us</div>
-								<div class="email">
-									<?php $this->info("email"); ?>
+					<div class="right contact-info">
+						<div class="phone-holder">
+							<a href="tel:<?php $this->info("phone"); ?>">
+								<div class="icon">
+									<img src="public/images/content/hd-phone.png" class="icon">
 								</div>
-							</div>
-						</a>
-					</div>
+								<div class="info">
+									<div class="label">Call Us</div>
+									<div class="phone">
+										<?php $this->info("phone"); ?>
+									</div>
+								</div>
+							</a>
+						</div>
 
+						<div class="email-holder">
+							<a href="tel:<?php $this->info("email"); ?>">
+								<div class="icon">
+									<img src="public/images/content/hd-email.png" class="icon">
+								</div>
+								<div class="info">
+									<div class="label">Email Us</div>
+									<div class="email">
+										<?php $this->info("email"); ?>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

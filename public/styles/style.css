@@ -97,13 +97,11 @@ h2 {
 
 p,
 ul,
-nav ul li a,
-.remarks {
+nav ul li a {
   font-family: 'OpenSans', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.8;
-  letter-spacing: .5px;
+  line-height: 1.6;
 }
 
 .title-page {
@@ -117,6 +115,7 @@ img {
   width: 100%;
   margin: 0;
   padding: 0;
+  display: block;
 }
 
 /*BUTTON*/
@@ -138,10 +137,10 @@ img {
   -webkit-appearance: inherit;
   border-radius: 13px;
   letter-spacing: 1.6px;
-  transition: all .8s ease-in-out;
-  -o-transition: all .8s ease-in-out;
-  -moz-transition: all .8s ease-in-out;
-  -webkit-transition: all .8s ease-in-out;
+  transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
 }
 
 .btn2 {
@@ -149,10 +148,10 @@ img {
 }
 
 .btn:hover {
-  transition: all .8s ease-in-out;
-  -o-transition: all .8s ease-in-out;
-  -moz-transition: all .8s ease-in-out;
-  -webkit-transition: all .8s ease-in-out;
+  transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
   color: #fff;
   background: #000;
 }
@@ -206,10 +205,16 @@ img {
   color: #2F689B;
 }
 
-.to-db { display: block; }
-@media (max-width: 959px){
-  .to-db { display: inline; }
+.to-db {
+  display: block;
 }
+
+@media (max-width: 959px) {
+  .to-db {
+    display: inline;
+  }
+}
+
 /*-----------------------------------------------HEADER-----------------------------------------------*/
 #header {}
 
@@ -444,7 +449,8 @@ nav ul li a {
 
 #banner .foreword {
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+  font-size: 18px;
+  letter-spacing: 5px;
 }
 
 #banner .title-like {
@@ -475,6 +481,7 @@ nav ul li a {
   #banner .title-like {
     font-size: 38px;
     width: 100%;
+    margin: auto;
   }
 
 }
@@ -505,7 +512,8 @@ nav ul li a {
 
 
   #yt-vid {
-    margin-top: -154px;
+    margin-top: -60px;
+    position: relative;
   }
 
   #yt-vid iframe {
@@ -538,7 +546,7 @@ nav ul li a {
   font-size: 18px;
   line-height: 2;
   width: 100%;
-  max-width: 1409px;
+  max-width: 1319px;
   margin: 0 auto 60px;
 }
 
@@ -573,22 +581,39 @@ nav ul li a {
     margin-top: 10px;
   }
 
+  #about .abt-content p {
+    font-size: 14px;
+  }
+
 }
 
 
 /*SERVICES*/
-#services {
+#services .container {
   background: url('../images/content/service-bg-img.png')no-repeat right top;
-  /* -webkit-background-size: cover;
-  background-size: cover; */
+  -webkit-background-size: cover;
+  background-size: cover;
   position: relative;
   color: #fff;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 774px;
 }
 
 #services .content {
-  padding: 100px 165px;
+  padding: 100px 0;
+  width: 100%;
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+#services .row {
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #services .serv-content {
@@ -605,6 +630,12 @@ nav ul li a {
   padding: 68px;
 }
 
+#services .serv-con p {
+  width: 100%;
+  max-width: 342px;
+  margin: auto;
+}
+
 #services .box {
   display: flex;
 }
@@ -618,22 +649,14 @@ nav ul li a {
   top: 169px;
   left: 0;
   position: relative;
-  /* display: inline-block;
-  font-size: 150px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 213px;
-  color: #DDDDDD;
-  font-weight: 100;
-  font-family: serif; */
 }
 
 
 #services .img-holder img {
   border-radius: 12px;
-  width: auto;
-  height: 100%;
-  min-height: 317px;
+  width: 100%;
+  max-width: 378px;
+  margin: auto;
 }
 
 #services .content p {
@@ -650,31 +673,37 @@ nav ul li a {
 
 @media screen and (max-width: 959px) {
 
-  #services {}
+  #services .container {
+    min-height: 0;
+  }
+
+  #services .row {
+    position: relative;
+  }
 
   #services .serv-content,
   #services .box {
     display: block;
   }
 
-  #services .content {
-    padding: 44px;
+  #services .serv-con {
+    padding: 28px;
   }
 
-  #services .serv-con {
-    padding: 33px 116px;
-  }
+  /* #services .content {
+    padding: 44px;
+  } */
 
   #services .box:not(:first-child)::before {
     display: none;
   }
 
-  #services {}
-
-  #services {}
-
   #services .serv-content .serv-title {
     font-size: 25px;
+  }
+
+  #services .serv-con p {
+    max-width: 100%;
   }
 }
 
@@ -686,8 +715,8 @@ nav ul li a {
   width: 100%;
   max-width: 746px;
   text-align: start;
-  transform: translate(18%, 25%);
-  margin: 0;
+  transform: translate(-50%, 50%);
+  padding-top: 55px;
 }
 
 #testimonials h1 {
@@ -713,57 +742,52 @@ nav ul li a {
   font-weight: 700;
 }
 
+#testimonials .remarks {
+  line-height: 2;
+}
+
 #testimonials .btn {
   margin: 50px 0;
 }
 
 #testimonials .img-holder {
-  margin-top: -198px;
+  margin-top: -136px;
   width: 100%;
 }
 
 @media screen and (max-width: 959px) {
 
-  #testimonials .tes-content {
-    max-width: 100%;
-    text-align: center;
-    transform: none;
-    margin: 42px 0;
-    padding: 0 76px;
-  }
-
-  #testimonials .title-page {
-    text-align: center;
-    margin-bottom: 31px;
-  }
-
-  #testimonials .btn {
-    margin: 30px auto;
-  }
-
-  #testimonials .img-holder {
-    display: none;
-  }
 
 }
 
 /* vision */
-#vision {
-  background: url('../images/content/vision-bg-img.png')no-repeat right top;
+#vision .container {
+  background: url(../images/content/vision-bg-img.png)no-repeat right top;
   -webkit-background-size: cover;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   color: #fff;
   width: 100%;
+  height: 100%;
   padding-bottom: 22px;
+  min-height: 768px;
 }
 
 #vision .content {
-  padding: 90px 180px;
+  padding: 100px 0;
 }
 
 #vision .content p {
   margin-top: 20px;
+}
+
+#vision .vision-con {
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 #vision .img-holder img {
@@ -802,21 +826,15 @@ nav ul li a {
 
 @media screen and (max-width: 959px) {
 
-
-  #vision .content {
-    padding: 20px 62px;
+  #vision .vision-con {
+    position: relative;
+    margin-top: -76px;
   }
 
   #vision .box-holder {
     width: 153px;
     transform: translate(-15%, -120%);
   }
-
-  #vision .box {
-    width: 70px;
-    height: 70px;
-  }
-
   #vision .btn-holder {
     display: flex;
   }
@@ -832,6 +850,7 @@ nav ul li a {
 
 #gallery {
   position: relative;
+  margin-top: 297px;
 }
 
 #gallery .row {
@@ -907,6 +926,10 @@ nav ul li a {
 
 
 @media screen and (max-width: 959px) {
+
+  #gallery {
+    margin-top: 0;
+  }
 
   #gallery .row {
     padding-top: 49px;
@@ -1106,12 +1129,13 @@ form .alert-danger {
 
   #footer .left {
     text-align: center;
-    margin: 0 auto;
+    margin: 33px auto;
   }
 
   #footer .left .img-holder img {
     max-width: 336px;
-}
+    margin: auto;
+  }
 
   #footer .left .contact-info .flex {
     display: block;
@@ -1121,6 +1145,10 @@ form .alert-danger {
     text-align: center;
     padding: 0 37px;
     margin: auto;
+  }
+
+  .ctc-form button {
+    margin: 36px auto;
   }
 
 
@@ -1230,11 +1258,75 @@ form .alert-danger {
 
 
 /*RESPONSIVE*/
-@media screen and (max-width: 1440px) {}
+
+
+@media screen and (max-width: 1440px) {
+  #header .content {
+    margin: 0;
+    border-radius: 0;
+    position: relative;
+  }
+
+  #testimonials .tes-content {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    transform: none;
+    margin: 42px 0;
+  }
+
+  #testimonials .box {
+    background-color: rgb(255 255 255 / 80%);
+    border-radius: 10px;
+    padding: 40px;
+  }
+
+  #testimonials .title-page {
+    text-align: center;
+    margin-bottom: 31px;
+  }
+
+  #testimonials .btn {
+    margin: 30px auto;
+  }
+
+  #testimonials .img-holder {
+    /* display: none; */
+    margin-top: -268px;
+  }
+}
 
 
 /*1200*/
-@media screen and (max-width: 1439px) {}
+@media screen and (max-width: 1410px) {
+  #header .h-content {
+    flex-direction: column-reverse;
+  }
+
+  #header .contact-info {
+    margin-bottom: 12px;
+  }
+
+}
+
+@media screen and (max-width: 1327px) {
+  #services .row {
+    top: 33%;
+  }
+
+  #vision .container {
+    min-height: 0;
+  }
+
+  #vision .vision-con {
+    position: relative;
+  }
+
+  #vision .box {
+    display: none;
+  }
+
+}
 
 @media screen and (max-width: 1200px) {
   body {
@@ -1265,6 +1357,10 @@ form .alert-danger {
 
   .title-page {
     font-size: 17px;
+  }
+
+  .row {
+    padding: 0 20px;
   }
 
 }

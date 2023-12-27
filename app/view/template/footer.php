@@ -1,7 +1,7 @@
 <footer>
 	<div id="footer">
 		<div class="row flex">
-			<div class="left">
+			<div class="left reveal fade-left">
 				<div class="img-holder"><img src="public/images/content/ft-logo.png" class=""></div>
 
 				<div class="contact-info">
@@ -55,17 +55,17 @@
 					your future projects!</p>
 				<form action="sendContactForm" method="post" class="sends-email ctc-form">
 
-					<label><span class="ctc-hide">Name:</span>
-						<input type="text" name="name" placeholder="Name">
+					<label><span class="ctc-hide">Name</span>
+						<input type="text" name="name" placeholder="Name:">
 					</label>
-					<label><span class="ctc-hide">Email:</span>
-						<input type="text" name="email" placeholder="Email">
+					<label><span class="ctc-hide">Email</span>
+						<input type="text" name="email" placeholder="Email:">
 					</label>
-					<label><span class="ctc-hide">Phone:</span>
-						<input type="text" name="phone" placeholder="Phone">
+					<label><span class="ctc-hide">Phone</span>
+						<input type="text" name="phone" placeholder="Phone:">
 					</label>
-					<label><span class="ctc-hide">Message / Questions:</span>
-						<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+					<label><span class="ctc-hide">Message</span>
+						<textarea name="message" cols="30" rows="10" placeholder="Message / Questions:"></textarea>
 					</label>
 					<!-- <label for="g-recaptcha-response"><span class="ctc-hide">Recaptcha</span></label>
 					<div class="g-recaptcha"></div>
@@ -135,6 +135,24 @@
 				$('.ctcBtn').attr('disabled', true);
 			}
 		});
+
+		function reveal() {
+			var reveals = document.querySelectorAll(".reveal");
+
+			for (var i = 0; i < reveals.length; i++) {
+				var windowHeight = window.innerHeight;
+				var elementTop = reveals[i].getBoundingClientRect().top;
+				var elementVisible = 150;
+
+				if (elementTop < windowHeight - elementVisible) {
+					reveals[i].classList.add("active");
+				} else {
+					reveals[i].classList.remove("active");
+				}
+			}
+		}
+
+		window.addEventListener("scroll", reveal);
 
 	</script>
 

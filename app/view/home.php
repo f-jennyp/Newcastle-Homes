@@ -2,7 +2,7 @@
 
 	<div id="yt-vid">
 		<div class="row flex vid-content">
-			<iframe src="https://www.youtube.com/embed/Hr_AB1t3aHo?si=D4B9ixeVJq7ahGHL" title="YouTube video player"
+			<iframe src="https://www.youtube.com/embed/#" title="YouTube video player"
 				frameborder="0"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				allowfullscreen></iframe>
@@ -10,7 +10,7 @@
 	</div>
 
 	<div id="about">
-		<div class="row">
+		<div class="row reveal fade-bottom">
 			<div class="title-page">ABOUT <span style="color: #ED1E19;">US</span></div>
 			<h1>Newcastle Homes</h1>
 			<hr class="custom-line">
@@ -40,7 +40,7 @@
 
 	<div id="services">
 		<div class="container">
-			<div class="content">
+			<div class="row content">
 				<div class="title-page">We Make Your</div>
 				<h1>New Home Your Castle</h1>
 				<p>At Newcastle Homes, we maintain a close relationship with our clients throughout the building
@@ -50,7 +50,7 @@
 					life. Your New Castle is built with excellence, from the ground up.</p>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row serv-contain">
 			<div class="serv-content">
 				<div class="box">
 					<div class="serv-con">
@@ -119,7 +119,7 @@
 
 	<div id="vision">
 		<div class="container">
-			<div class="content">
+			<div class="row content">
 				<h1>Your Vision, Our Expertise, <span class="to-db">Your Castle.</span></h1>
 				<p>Newcastle Homes is the premier custom home builder in Corpus Christi, North Padre Island and Port
 					Aransas. We offer a truly custom build with unique <span class="to-db">designs that bring your
@@ -150,7 +150,7 @@
 			<div class="title-page">GALLERY</div>
 			<h1>Our Gallery</h1>
 
-			<div class="gal-content">
+			<div class="gal-content reveal fade-bottom">
 				<div class="btn-holder">
 					<div class="btn btn2">
 						<a href="<?php echo URL ?>gellery#content">VIEW GALLERY</a>

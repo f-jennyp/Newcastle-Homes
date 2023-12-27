@@ -94,7 +94,7 @@
 			<img src="<?php echo URL ?>public/images/content/banner.png" alt="banner">
 		</div>
 		<div class="content-holder">
-			<div class="row">
+			<div class="row  cssanimation fadeInBottom">
 				<div class="foreword">A QUALITY HOME</div>
 				<div class="title-like">UNIQUELY <span class="title-w">CUSTOMIZED</span> FOR YOU</div>
 			</div>
